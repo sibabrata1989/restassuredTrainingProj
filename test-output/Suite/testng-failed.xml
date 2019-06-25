@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="rest_assured.rest_assured.LibraryPostWithParametrisedBodyTest">
+        <methods>
+          <include name="Book" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- rest_assured.rest_assured.LibraryPostWithParametrisedBodyTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

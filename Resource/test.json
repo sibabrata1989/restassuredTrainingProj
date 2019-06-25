@@ -1,0 +1,15 @@
+{
+"TestData":[
+{"Label":"name","Value":"Learn Rest API"},
+{"Label":"isbn","Value":"kjsdl"},
+{"Label":"aisle","Value":"04734"},
+{"Label":"author","Value":"John foe"}
+],
+
+"DemoData":[
+{"Label":"name","Value":"Learn Rest API"},
+{"Label":"isbn","Value":"kjsshffdl"},
+{"Label":"aisle","Value":"087034"},
+{"Label":"author","Value":"John foe"}
+]
+}
