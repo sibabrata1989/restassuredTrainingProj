@@ -19,10 +19,10 @@ import java.util.Properties;
 public class Twitter_APIs_Test implements ConstantsVariable
 {
 	
-	String ConsumerKey="DL5GrrYCkVcrF74IxP190AODb";
-	String ConsumerSecret="WnVvIOjsFbPQUnB7R1Jkn27OXhNjDXJ661gJk77hkVKJkfrYOJ";
-	String Token="231500768-dbO7RparBBochrWjbhcSZf8WOvLBbCoqwZHAadW4";
-	String TokenSecret="ZQryLwGdAenXhOl0CJq3EXZVAgJE9EymnRBKt0cQx6Jl0";
+	String ConsumerKey="ok91GGBYji9qywCSKlhtfdLmG";
+	String ConsumerSecret="9wEV8fh9sZgdOJQDzIu60uhKuAj7QNKBiOWOvZ7b4nwIsjuEni";
+	String Token="231500768-8AQNPs1MENtlLc16AxVDRzdgyCqYhSvdXbHeZcoq";
+	String TokenSecret="3d0CBtK2P7i3nPDGjwfoU89yKCIP29kXli6qSIaBVEEZh";
 	String id;
 	Properties prp;
 	
@@ -64,7 +64,7 @@ public class Twitter_APIs_Test implements ConstantsVariable
 		RestAssured.baseURI=prp.getProperty("TWITTER_HOST");;
 		Response res= given().
 				              auth().oauth(ConsumerKey, ConsumerSecret, Token, TokenSecret).
-							  queryParam("status", "I am creating this tweet using Automation date-5/1").
+							  queryParam("status", "I am creating this tweet using Automation date-7/14").
 									
 					   when().
 					          post("/update.json").

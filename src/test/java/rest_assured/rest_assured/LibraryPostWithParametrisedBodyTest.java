@@ -16,7 +16,7 @@ public class LibraryPostWithParametrisedBodyTest {
 	@DataProvider(name="BooksData")
 	public Object[][] getData()
 	{
-		return new Object[][]{{"ddffccdd","35492"},{"vdfffsv","349342"},{"ffsdgh","654345"},{"gffxdf","44925"}};
+		return new Object[][]{{"dfd","392"},{"vfv","342"},{"fh","645"},{"gff","4451"}};
 	}
 	
 	@Test(dataProvider = "BooksData")

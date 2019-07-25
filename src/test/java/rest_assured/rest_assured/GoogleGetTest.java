@@ -33,13 +33,13 @@ public void Get() {
 				param(RADIUS,"500").
 				param(KEY,prp.getProperty("KEY1")).
 		when().
-				get(Resources.postData()).
+				get("/maps/api/place/nearbysearch/json").
 
 		then().assertThat().
 				statusCode(STATUS_OK).and().contentType(ContentType.JSON).and().
 				body("results[0].name", equalTo("Sydney")).and().
 				body("results[0].place_id",equalTo("ChIJP3Sa8ziYEmsRUKgyFmh9AQM")).and().
-				header(SERVER,"scaffolding on HTTPServer2");
+				header(SERVER,"scaffolding on HTTPServer2").log().all();
 
 }
 

@@ -1,29 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11344" started-at="2019-05-05T10:36:41Z" finished-at="2019-05-05T10:36:53Z">
+  <suite name="Default suite" duration-ms="10546" started-at="2019-07-25T15:18:13Z" finished-at="2019-07-25T15:18:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11344" started-at="2019-05-05T10:36:41Z" finished-at="2019-05-05T10:36:53Z">
-      <class name="rest_assured.rest_assured.Twitter_APIs_Test">
-        <test-method status="PASS" signature="commonService()[pri:0, instance:rest_assured.rest_assured.Twitter_APIs_Test@7dc7cbad]" name="commonService" is-config="true" duration-ms="17" started-at="2019-05-05T16:06:41Z" finished-at="2019-05-05T16:06:41Z">
+    <test name="Default test" duration-ms="10546" started-at="2019-07-25T15:18:13Z" finished-at="2019-07-25T15:18:23Z">
+      <class name="rest_assured.rest_assured.GoogleGetTest">
+        <test-method status="PASS" signature="commonService()[pri:0, instance:rest_assured.rest_assured.GoogleGetTest@7dc7cbad]" name="commonService" is-config="true" duration-ms="25" started-at="2019-07-25T20:48:13Z" finished-at="2019-07-25T20:48:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- commonService -->
-        <test-method status="PASS" signature="E2E()[pri:0, instance:rest_assured.rest_assured.Twitter_APIs_Test@7dc7cbad]" name="E2E" duration-ms="9776" started-at="2019-05-05T16:06:41Z" finished-at="2019-05-05T16:06:51Z">
+        <test-method status="PASS" signature="Get()[pri:0, instance:rest_assured.rest_assured.GoogleGetTest@7dc7cbad]" name="Get" duration-ms="10462" started-at="2019-07-25T20:48:13Z" finished-at="2019-07-25T20:48:23Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- E2E -->
-        <test-method status="PASS" signature="createTweet()[pri:0, instance:rest_assured.rest_assured.Twitter_APIs_Test@7dc7cbad]" name="createTweet" duration-ms="789" started-at="2019-05-05T16:06:51Z" finished-at="2019-05-05T16:06:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createTweet -->
-        <test-method status="PASS" signature="getLatestTweet()[pri:0, instance:rest_assured.rest_assured.Twitter_APIs_Test@7dc7cbad]" name="getLatestTweet" duration-ms="732" started-at="2019-05-05T16:06:52Z" finished-at="2019-05-05T16:06:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getLatestTweet -->
-      </class> <!-- rest_assured.rest_assured.Twitter_APIs_Test -->
+        </test-method> <!-- Get -->
+      </class> <!-- rest_assured.rest_assured.GoogleGetTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

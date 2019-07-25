@@ -1,8 +1,8 @@
 {
 "TestData":[
-{"Label":"name","Value":"Learn Rest API"},
-{"Label":"isbn","Value":"kjsdl"},
-{"Label":"aisle","Value":"04734"},
+{"Label":"name","Value":"Learn Rest Webservice"},
+{"Label":"isbn","Value":"sdl"},
+{"Label":"aisle","Value":"734"},
 {"Label":"author","Value":"John foe"}
 ],
 

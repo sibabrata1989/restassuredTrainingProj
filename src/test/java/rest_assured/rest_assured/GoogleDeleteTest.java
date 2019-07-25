@@ -34,6 +34,7 @@ public class GoogleDeleteTest {
 			
 			JsonPath js = new JsonPath(responseString);
 			String placeID = js.get("place_id");
+			System.out.println("The scope value is "+js.get("scope"));
 			System.out.println("Place ID is: "+placeID);
 		
 		
