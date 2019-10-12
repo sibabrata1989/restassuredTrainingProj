@@ -1,5 +1,7 @@
 package rest_assured.rest_assured;
 import static org.hamcrest.Matchers.equalTo;
+
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import Library_File.ConstantsVariable;
 import org.testng.annotations.Test;
@@ -15,14 +17,15 @@ import static org.hamcrest.Matchers.equalTo;
 
 import java.io.IOException;
 import java.util.Properties;
+import java.util.Random;
 
 public class Twitter_APIs_Test implements ConstantsVariable
 {
 	
-	String ConsumerKey="ok91GGBYji9qywCSKlhtfdLmG";
-	String ConsumerSecret="9wEV8fh9sZgdOJQDzIu60uhKuAj7QNKBiOWOvZ7b4nwIsjuEni";
-	String Token="231500768-8AQNPs1MENtlLc16AxVDRzdgyCqYhSvdXbHeZcoq";
-	String TokenSecret="3d0CBtK2P7i3nPDGjwfoU89yKCIP29kXli6qSIaBVEEZh";
+	String ConsumerKey="QTkOtUHGmJ5rOKh4Qn2OMEfzg";
+	String ConsumerSecret="gxCuOhnqE2g9LSegDgFSIYWqcYpptFhDz3OgqRWn46ATQ9Qbmf";
+	String Token="231500768-wf3nRAXTDu7xzZeg9FGACbJhJvmSVmKxLAAY69JZ";
+	String TokenSecret="kYKkK7vk2yrQ2wb9wfF7PonGAg1XGSwEsGRKqnU9q32k8";
 	String id;
 	Properties prp;
 	
@@ -32,7 +35,7 @@ public class Twitter_APIs_Test implements ConstantsVariable
 		prp = ReusableMethods.getPropertyFile();
 	}
 	
-	@Test
+	@Test(priority = 1)
 	public void getLatestTweet()
 	{
 		
@@ -57,14 +60,15 @@ public class Twitter_APIs_Test implements ConstantsVariable
 	
 	}
 	
-	@Test
+	@Test(priority = 2)
 	public void createTweet()
 	{
+		Random rnd = new Random();
 		
 		RestAssured.baseURI=prp.getProperty("TWITTER_HOST");;
 		Response res= given().
 				              auth().oauth(ConsumerKey, ConsumerSecret, Token, TokenSecret).
-							  queryParam("status", "I am creating this tweet using Automation date-7/14").
+							  queryParam("status", "I am creating this tweet using Automation-"+rnd.nextInt(100)).
 									
 					   when().
 					          post("/update.json").
@@ -80,7 +84,7 @@ public class Twitter_APIs_Test implements ConstantsVariable
 	
 	}
 	
-	@Test
+	@Test(priority = 3)
 	public void E2E()
 	{
 		createTweet();
@@ -98,6 +102,7 @@ public class Twitter_APIs_Test implements ConstantsVariable
 							System.out.println("Tweet which got deleted with automation is below");
 							System.out.println(js.get("text"));
 							System.out.println(js.get("truncated"));
+							Assert.assertFalse((Boolean) js.get("truncated"),"The truncated value is true!");
 								
 	}
 }

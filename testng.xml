@@ -3,17 +3,15 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-    <!--   <class name="rest_assured.rest_assured.GoogleGetTest"/>
-      <class name="rest_assured.rest_assured.GooglePost_XmlTest"/>
-      <class name="rest_assured.rest_assured.LibraryPostWithParametrisedBodyTest"/>
+      <!-- <class name="rest_assured.rest_assured.Twitter_APIs_Test"/> -->
       <class name="rest_assured.rest_assured.GoogleDeleteTest"/>
-      <class name="restAssured.Demo.Google_PostCall"/>
-      <class name="rest_assured.rest_assured.GooglePost_JsonTest"/>
-      <class name="restAssured.Demo.Google_GetCall"/>
-      <class name="restAssured.Demo.Google_DeleteCall"/>
       <class name="rest_assured.rest_assured.GooglePostTest"/>
+      <class name="rest_assured.rest_assured.AddBookTest"/>
+     <!--  <class name="rest_assured.rest_assured.GoogleGetTest"/>
+      <class name="rest_assured.rest_assured.LibraryPostWithParametrisedBodyTest"/>
+      <class name="rest_assured.rest_assured.GooglePost_XmlTest"/>
+      <class name="rest_assured.rest_assured.GooglePost_JsonTest"/>
       <class name="rest_assured.rest_assured.GoogleJsonParsingTest"/> -->
-      <class name="rest_assured.rest_assured.Twitter_APIs_Test"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
